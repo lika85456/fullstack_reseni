@@ -1,0 +1,42 @@
+.App{
+  display:flex;
+  justify-content: center;
+}
+
+.section{
+  margin:5px;
+  border:1px solid #666;
+  border-radius: 5px;
+  padding:5px;
+  flex:0;
+  min-width: 500px;
+}
+
+.horizontalContainer{
+  flex:1;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.verticalContainer{
+  flex:1;
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.link{
+  text-decoration:wavy;
+  color:red;
+  text-transform: uppercase;
+}
+
+
+.link::before {
+  content: '\003E';
+}
+.link::after {
+  content: '\003C';
+}
